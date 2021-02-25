@@ -1,2 +1,2 @@
-# FileExplorer_Python
- File Explorer made with Tkinter and Python
+# ImageViewer
+ Image Viewer written in Python using Tkinter
