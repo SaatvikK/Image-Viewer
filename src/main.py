@@ -4,22 +4,24 @@ from PIL import ImageTk,Image;
 
 class Main():
   def __init__(self):
-    self.window = Tk();
+    self.window = tk.Tk();
   
   def buttons(self):
-    self.ForwardCanvas = tk.Canvas(self.window, width = 20, height = 26, background = "blue");
-    self.ForwardCanvas.pack();
     self.ForwardButton = tk.Button(self.window, text = "-->");
-    self.ForwardButton.pack(padx = 75, pady = 0);
-    #self.ForwardCanvas.create_window(20, 15, window = self.ForwardButton);
+    #self.ForwardButton.place(x = 200, y = 100);
+    self.ForwardButton.pack(padx = 0, pady = 0, side = BOTTOM);
+
+    self.BackwardButton = tk.Button(self.window, text = "<--");
+    #self.BackwardBUtton.place(x = 200, y = 100);
+    self.BackwardButton.pack(padx = 0, pady = 0, side = BOTTOM);
 
 
 
   def chooseImage(self):
-    self.CanvasPath = tk.Canvas(self.window, width = 150, height = 30, background = "green");
-    self.CanvasPath.pack();
-    self.Path = tk.Entry(self.window) 
-    self.CanvasPath.create_window(75, 20, window = self.Path)
+
+    self.Path = tk.Entry(self.window, width = 100);
+    #self.Path.place(x = 0, y = 0);
+    self.Path.pack(padx = 0, pady = 0);
 
   def initializeWindow(self):
     self.window.title("Python Image Viewer")
