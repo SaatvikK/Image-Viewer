@@ -7,7 +7,7 @@ class Main():
   
   def initializeWindow(self):
     self.window = Tk();
-    self.window.title("Python File Explorer")
+    self.window.title("Python Image Viewer")
     self.window.mainloop();
     
 
